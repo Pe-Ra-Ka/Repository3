@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <title>Unit-1: Database Management System</title>
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html">Main</a>
+            <a href="Unit-1.html">Unit-1</a>
+            <a href="Unit-2">Unit-2</a>
+            <a href="Unit-3">Unit-3</a>
+            <a href="Unit-4">Unit-4</a>
+            <a href="Unit-5">Unit-5</a>
+            <a href="Unit-6">Unit-6</a>
+            <a href="Unit-7">Unit-7</a>
+        </nav>
+        <h1>Unit-1: Database Management System</h1>
+
+        <h2>Data</h2>
+        According to the
+        Oxford Dictionary <b><i>"Data is distinct pieces of information, usually formatted in a special way".</i></b> <br>
+        Data can be measured, collected, reported, and analyzed, whereupon it is often visualized using graphs, images, or other analysis tools. Raw data ("unprocessed data") may be a collection of numbers or characters before it's been "cleaned" and corrected by researchers.
+        <h2>Information</h2>
+        Information is data that has been processed, organized, or structured in a way that makes it meaningful, valuable, and useful. It is data that has been given context, relevance, and purpose. It gives knowledge, understanding, and insights that can be used for decision-making, problem-solving, communication, and various other purposes.
+        <h3>Features of Information</h3>
+        <ol type="1">
+            <li><b>Subjectivity</b></li>
+            Characteristics of information refer to the qualities that define its usefulness. Subjectivity is one such trait, which denotes the extent to which the information has been influenced by personal opinion or bias.
+            <li>Relevance</li>
+            The relevance of information is another important characteristic. It implies that the collected data should be useful and applicable to the purpose for which it is being used. For instance, a student searching for information about a particular topic should have access to data that is related and helpful in furthering their understanding and research.
+            <li>Timeliness</li>
+            Timeliness is an important characteristic of information because it provides evidence about when the data was collected or updated last.
+            <li>Accuracy</li>
+            The accuracy of information is one of its most important characteristics. This implies that the content should provide correct and reliable data which has been verified by reliable sources.
+            <li>Correct Information Format</li>
+            Correct information format means ensuring that the data provided is structured in a way that makes it easy for users to access, understand, and utilize it. This involves presenting the data in an organized manner so that it can be read and interpreted quickly without any confusion or ambiguity.
+        </ol>
+        <h2>Terminologies in Database</h2>
+        <h3>Table, Field, Record, Tuple, Object, Keys</h3>
+        <b>Table:</b> A collection of related data organized in rows and columns in a database. <br>
+        <b>Field:</b> A single piece of data or attribute in a table column (e.g., Name, Age). <br>
+        <b>Record:</b> A complete set of fields representing one item or entity (a row in a table). <br>
+        <b>Tuple:</b> Another term for a record; a row in relational databases. <br>
+        <b>Object:</b> In object-oriented databases, an instance containing both data (fields) and methods (functions). <br>
+        <b>Keys:</b> Special fields used to uniquely identify records (e.g., Primary Key) or link tables (Foreign Key). <br>
+        <h3>Data Dictionary</h3>
+        A centralized repository that stores metadata about the database structure, such as definitions of tables, fields, data types, and relationships. <br>
+        Helps users and administrators understand and manage the database schema.
+        <h3>Database Management System (DBMS)</h3>
+        <b>Introduction:</b>
+        Software that allows users to define, create, maintain, and control access to databases. <br>
+        Manages data efficiently, supports data manipulation, and ensures data integrity and security. <br>
+        <b>Objectives</b>
+        <ul>
+            <li>Provide data abstraction and independence.</li>
+            <li>Facilitate efficient data storage, retrieval, and update.</li>
+            <li>Enforce data integrity and security.</li>
+            <li>Support concurrent access and recovery from failures.</li>
+        </ul>
+
+        <b>Advantages</b>
+        <ol type="I">
+            <li>Reduced data redundancy and inconsistency.</li>
+            <li>Improved data sharing and security.</li>
+            <li>Centralized data management.</li>
+            <li>Better data integrity and backup/recovery features.</li>
+        </ol>
+
+        <b>Disadvantages</b>
+        <ol type="I">
+            <li>High initial cost for setup and training.</li>
+            <li>Complexity in design and management.</li>
+            <li>Performance overhead due to abstraction layers.</li>
+            <li>Risk of data loss or corruption if not properly managed.</li>
+        </ol>
+
+        <h2>Types of Database Model</h2>
+        <ul>
+            <li><b>Hierarchical:</b> Data organized in a tree-like structure with parent-child relationships. Fast for simple, one-to-many data.</li>
+            <li><b>Network:</b> Complex graph-like structure allowing many-to-many relationships via sets.</li>
+            <li><b>Relational:</b> Data stored in tables (relations) with rows (tuples) and columns (fields). Most widely used.</li>
+            <li><b>Entity-Relationship (ER):</b> Conceptual model representing data as entities, attributes, and relationships, often used for database design.</li>
+        </ul>
+        
+        <h2>Integrity Constraints and Types:</h2>
+        <ul>
+            <li><b>Domain:</b> Ensures data in a field conforms to a specific data type or range.</li>
+            <li><b>Entity</b> Ensures each entity (record) is uniquely identifiable (usually via primary key).</li>
+            <li><b>Referential:</b> Maintains consistency between related tables through foreign keys.</li>
+            <li><b>Keys:</b> Enforces uniqueness and relationships; includes primary keys, foreign keys, and candidate keys.</li>
+        </ul>
+
+        <h2>Normalization</h2>
+        <h3>Introduction:</h3>
+        Process of organizing data to reduce redundancy and improve data integrity.
+        <h3>Normal Forms</h3>
+        <b>1NF (First Normal Form):</b> Eliminate repeating groups; atomic values only. <br>
+        <b>2NF (Second Normal Form):</b> Remove partial dependency on a composite primary key. <br>
+        <b>3NF (Third Normal Form):</b> Remove transitive dependency; non-key fields depend only on the primary key. <br>
+        <h3>Advantages:</h3>
+        <ul>
+            <li>Eliminates data redundancy</li>
+            <li>Improves data integrity</li>
+            <li>Simplifies data maintenance.</li>
+        </ul>
+        <h3>Disadvantages:</h3>
+        <ul>
+            <li>Can lead to complex queries and joins. </li>
+            <li>Might affect performance due to multiple tables. </li>
+        </ul>
+        <h2>Centralized and Distributed Database</h2>
+
+            <h3>Introduction:</h3>
+            <p><strong>Centralized DB:</strong> Data stored and managed at a single location.</p>
+            <p><strong>Distributed DB:</strong> Data spread across multiple physical locations interconnected via a network.</p>
+
+            <h3>Advantages:</h3>
+            <ul>
+                <li><strong>Centralized:</strong> Easier management and control.</li>
+                <li><strong>Distributed:</strong> Improved reliability, scalability, and faster local access.</li>
+            </ul>
+
+            <h3>Disadvantages:</h3>
+            <ul>
+                <li><strong>Centralized:</strong> Single point of failure, limited scalability.</li>
+                <li><strong>Distributed:</strong> Complex design, synchronization issues, higher cost.</li>
+            </ul>
+
+            <h3>Comparison:</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Aspect</th>
+                    <th>Centralized</th>
+                    <th>Distributed</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Location</td>
+                    <td>Single site</td>
+                    <td>Multiple sites</td>
+                </tr>
+                <tr>
+                    <td>Reliability</td>
+                    <td>Lower (single failure)</td>
+                    <td>Higher (redundancy)</td>
+                </tr>
+                <tr>
+                    <td>Scalability</td>
+                    <td>Limited</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Complexity</td>
+                    <td>Simpler</td>
+                    <td>Complex</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2>Database Security</h2>
+
+            <h3>Introduction:</h3>
+            <p>Protecting database from unauthorized access, misuse, or damage.</p>
+
+            <h3>Challenges:</h3>
+            <ul>
+                <li>Unauthorized access.</li>
+                <li>Data breaches.</li>
+                <li>Maintaining data integrity.</li>
+                <li>Managing user privileges.</li>
+            </ul>
+
+            <h3>Security Measures:</h3>
+            <ul>
+                <li>Authentication and authorization.</li>
+                <li>Encryption.</li>
+                <li>Backup and recovery plans.</li>
+                <li>Auditing and monitoring access.</li>
+            </ul>
+
+            <h3>Roles of DBA (Database Administrator):</h3>
+            <ul>
+                <li>Manage and maintain database systems.</li>
+                <li>Implement security policies.</li>
+                <li>Ensure data integrity and availability.</li>
+                <li>Backup and recovery management.</li>
+                <li>Performance tuning and user support.</li>
+            </ul>
+
+            </body>
+            </html>
+
+    </body>
+</html>
