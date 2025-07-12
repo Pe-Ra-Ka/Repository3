@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unit-2: C-Programming</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    nav {
+      background-color: #e8f0fe;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+    }
+    h1, h2, h3 {
+      color: #004080;
+      margin-bottom: 15px;
+    }
+    code {
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+    }
+    pre {
+      background-color: #eef5ff;
+      padding: 12px 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Main</a>
+    <a href="Unit-1.html">Unit-1</a>
+    <a href="Unit-2.html">Unit-2</a>
+    <a href="Unit-3.html">Unit-3</a>
+    <a href="Unit-4.html">Unit-4</a>
+    <a href="Unit-5.html">Unit-5</a>
+    <a href="Unit-6.html">Unit-6</a>
+    <a href="Unit-7.html">Unit-7</a>
+  </nav>
+
+  <h1>Unit-2: C-Programming</h1>
+
+  <h3>1. Working with a Function</h3>
+    <p>In C programming, a <em>function</em> is a block of reusable code designed to perform a specific task. It helps organize code modularly and makes programs easier to maintain and understand. Functions can return a value or be <em>void</em> if they return none.</p>
+    <h4><em>Syntax:</em></h4><pre><code><em>return_type function_name(parameter_list) {// body of the function}</em></code></pre>
+    <h4>Types of Functions:</h4><ul><li><strong>Pre-defined library functions:</strong> Built-in functions such as <code>printf()</code> and <code>sqrt()</code>, found in headers like <code>&lt;stdio.h&gt;</code> and <code>&lt;math.h&gt;</code>.</li><li><strong>User-defined functions:</strong> Custom functions written by programmers to perform specific tasks.</li></ul>
+    <h4>Key Components:</h4><ul><li><strong>Function Prototype:</strong> Declares the function before use.Example: <code>int add(int, int);</code></li><li><strong>Function Call:</strong> Invokes the function to execute its task.Example: <code>add(3, 5);</code></li><li><strong>Function Definition:</strong> Contains the actual logic of the function.<pre><code>int add(int a, int b) {return a + b;}</code></pre></li><li><strong>Return Type:</strong> The data type of the value returned by the function. Use <code>void</code> if the function returns nothing.</li></ul>
+
+  <h3>2. Categories of Functions in C with Examples</h3>
+
+    <h4>i. <em>Return type, no arguments</em></h4>
+    <p>Returns a value without taking any input.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    int getNumber() {
+        return 10;
+    }
+
+    int main() {
+        int x = getNumber();
+        printf("%d", x);
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-2.1.png" style="width: 80%; display: block; margin: 10px auto;">
+
+    <h4>ii. <em>Return type, with arguments</em></h4>
+    <p>Returns a value using input parameters.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    int square(int n) {
+        return n * n;
+    }
+
+    int main() {
+        printf("%d", square(5));
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-2.2.png" style="width: 80%; display: block; margin: 10px auto;">
+
+    <h4>iii. <em>No return, no arguments</em></h4>
+    <p>Performs a task without input or output return.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    void greet() {
+        printf("Hello!");
+    }
+
+    int main() {
+        greet();
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-2.3.png" style="width: 80%; display: block; margin: 10px auto;">
+
+    <h4>iv. <em>No return, with arguments</em></h4>
+    <p>Takes input and performs a task without returning a value.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    void display(int n) {
+        printf("Value: %d", n);
+    }
+
+    int main() {
+        display(7);
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-2.4.png" style="width: 80%; display: block; margin: 10px auto;">
+
+  <h3>2. Categories of Functions in C with Examples</h3>
+
+    <h4>i. <em>Return type, no arguments</em></h4>
+    <p>Returns a value without taking any input.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    int getNumber() {
+        return 10;
+    }
+
+    int main() {
+        int x = getNumber();
+        printf("%d", x);
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-2.1.png" style="width: 80%; display: block; margin: 10px auto;">
+
+    <h4>ii. <em>Return type, with arguments</em></h4>
+    <p>Returns a value using input parameters.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    int square(int n) {
+        return n * n;
+    }
+
+    int main() {
+        printf("%d", square(5));
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-2.2.png" style="width: 80%; display: block; margin: 10px auto;">
+
+    <h4>iii. <em>No return, no arguments</em></h4>
+    <p>Performs a task without input or output return.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    void greet() {
+        printf("Hello!");
+    }
+
+    int main() {
+        greet();
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-2.3.png" style="width: 80%; display: block; margin: 10px auto;">
+
+    <h4>iv. <em>No return, with arguments</em></h4>
+    <p>Takes input and performs a task without returning a value.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    void display(int n) {
+        printf("Value: %d", n);
+    }
+
+    int main() {
+        display(7);
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-2.4.png" style="width: 80%; display: block; margin: 10px auto;">
+
+  <h3>4. Recursive Functions in C</h3>
+
+    <p>A <em>recursive function</em> in C is one that calls itself to break down complex problems into smaller, more manageable sub-problems. The recursion continues until a <em>base condition</em> is met to terminate the process.</p>
+
+    <h4><em>Syntax:</em></h4>
+    <pre><code><em>
+    return_type function_name(parameters) {
+        if (base_condition)
+            return value;
+        else
+            return function_name(modified_parameters);
+    }
+    </em></code></pre>
+
+    <h4>A. Factorial Program</h4>
+    <p>This example computes the factorial of a number using recursion.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    int factorial(int n) {
+        if (n == 0) return 1;
+        else return n * factorial(n - 1);
+    }
+
+    int main() {
+        int n = 5;
+        printf("Factorial: %d", factorial(n));
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-4.1.png" style="width: 80%; display: block; margin: 10px auto;">
+
+    <h4>B. Fibonacci Program</h4>
+    <p>This recursive program prints the nth number in the Fibonacci sequence.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    int fibonacci(int n) {
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    int main() {
+        int n = 7;
+        printf("Fibonacci: %d", fibonacci(n));
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-4.2.png" style="width: 80%; display: block; margin: 10px auto;">
+
+  <h3>5. Passing Arrays to Functions in C</h3>
+
+    <p>In C programming, arrays can be passed to functions to perform operations such as printing or modifying elements. Here are two examples that demonstrate this concept:</p>
+
+    <h4>A. <em>Print Elements of an Array</em></h4>
+    <p>This program passes an integer array to a function which prints each element.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    void printArray(int arr[], int size) {
+        for (int i = 0; i < size; i++)
+            printf("%d ", arr[i]);
+    }
+
+    int main() {
+        int nums[] = {1, 2, 3, 4};
+        printArray(nums, 4);
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-5.1.png" style="width: 80%; display: block; margin: 10px auto;">
+
+    <h4>B. <em>Modify Elements of an Array</em></h4>
+    <p>This program doubles each element in an array using a function.</p>
+    <pre><code>
+    #include &lt;stdio.h&gt;
+
+    void doubleArray(int arr[], int size) {
+        for (int i = 0; i < size; i++)
+            arr[i] *= 2;
+    }
+
+    int main() {
+        int a[] = {2, 4, 6};
+        doubleArray(a, 3);
+        for (int i = 0; i < 3; i++)
+            printf("%d ", a[i]);
+        printf("\n\nExecuted By 024NEB921");
+        return 0;
+    }
+    </code></pre>
+    <img src="C-5.2.png" style="width: 80%; display: block; margin: 10px auto;">
+
+
+</body>
+</html>

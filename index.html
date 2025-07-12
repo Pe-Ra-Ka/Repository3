@@ -1,112 +1,126 @@
-<html>
-    <head>
-        <title>Index</title>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-            table,td,tr
-            {
-                text-align: center;
-            }
-            table
-            {
-                display: inline-block;
-            }
-        </style>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    nav {
+      background-color: #e8f0fe;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+    }
+    h1, h2 {
+      color: #004080;
+      margin-bottom: 15px;
+    }
+    table {
+      width: 80%;
+      margin: 0 auto 30px;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f7ff;
+      font-weight: bold;
+      color: #003366;
+    }
+    tr:nth-child(even) {
+      background-color: #f9fcff;
+    }
+    ul {
+      margin-left: 40px;
+      columns: 2;
+      column-gap: 40px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
 
-    <body>
-        <nav>
-            <a href="index.html">Main</a>
-            <a href="Unit-1.html">Unit-1</a>
-            <a href="Unit-2">Unit-2</a>
-            <a href="Unit-3">Unit-3</a>
-            <a href="Unit-4">Unit-4</a>
-            <a href="Unit-5">Unit-5</a>
-            <a href="Unit-6">Unit-6</a>
-            <a href="Unit-7">Unit-7</a>
-        </nav>
-        <h1>Unitwise Marks Distribution</h1>
-        
-        <table border="1" align="center">
-            <tr>
-                <th>S.N.</th>
-                <th>Topic</th>
-                <th>Content wise marks</th>
-                <th>Working hours</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Database management system</td>
-                <td>8</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Data communication and networking</td>
-                <td>9</td>
-                <td>15</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Web Tech-II</td>
-                <td>8</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>C Programming II</td>
-                <td>8</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Object oriented programming</td>
-                <td>6</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Software devlopment life cycle</td>
-                <td>6</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Recent Trends in technology</td>
-                <td>8</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>Total</b></td>
-                <td><b>50</b></td>
-                <td><b>80</b></td>
-            </tr>
+  <nav>
+    <a href="index.html">Main</a>
+    <a href="Unit-1.html">Unit-1</a>
+    <a href="Unit-2.html">Unit-2</a>
+    <a href="Unit-3.html">Unit-3</a>
+    <a href="Unit-4.html">Unit-4</a>
+    <a href="Unit-5.html">Unit-5</a>
+    <a href="Unit-6.html">Unit-6</a>
+    <a href="Unit-7.html">Unit-7</a>
+  </nav>
 
-        </table>
+  <h1>Unitwise Marks Distribution</h1>
 
-        <h2>Practical Topics</h2>
-        <ul>
-            <li>DDL AND DML LANGUAGES</li>
-<li>SQL DATATYPES</li>
-<li>CHAR</li>
-<li>VARCHAR</li>
-<li>BINARY</li>
-<li>VARBINARY</li>
-<li>TINYBLOB</li>
-<li>TINYTEXT</li>
-<li>TEXT</li>
-<li>LONGTEXT</li>
-<li>ENUM</li>
-<li>BIT</li>
-<li>TINY INT</li>
-<li>BOOLEAN</li>
-<li>INTEGER</li>
-<li>FLOAT</li>
-<li>DOUBLE</li>
-<li>DECIMAL</li>
-<li>DATE</li>
-<li>DATETIME</li>
+  <table>
+    <thead>
+      <tr>
+        <th>S.N.</th>
+        <th>Topic</th>
+        <th>Content-wise Marks</th>
+        <th>Working Hours</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Database Management System</td><td>8</td><td>12</td></tr>
+      <tr><td>2</td><td>Data Communication and Networking</td><td>9</td><td>15</td></tr>
+      <tr><td>3</td><td>Web Tech-II</td><td>8</td><td>12</td></tr>
+      <tr><td>4</td><td>C Programming II</td><td>8</td><td>12</td></tr>
+      <tr><td>5</td><td>Object Oriented Programming</td><td>6</td><td>10</td></tr>
+      <tr><td>6</td><td>Software Development Life Cycle</td><td>6</td><td>10</td></tr>
+      <tr><td>7</td><td>Recent Trends in Technology</td><td>8</td><td>12</td></tr>
+      <tr>
+        <td colspan="2"><strong>Total</strong></td>
+        <td><strong>50</strong></td>
+        <td><strong>80</strong></td>
+      </tr>
+    </tbody>
+  </table>
 
-        </ul>
-    </body>
+  <h2>Practical Topics</h2>
+  <ul>
+    <li>DDL and DML Languages</li>
+    <li>SQL Datatypes</li>
+    <li>CHAR</li>
+    <li>VARCHAR</li>
+    <li>BINARY</li>
+    <li>VARBINARY</li>
+    <li>TINYBLOB</li>
+    <li>TINYTEXT</li>
+    <li>TEXT</li>
+    <li>LONGTEXT</li>
+    <li>ENUM</li>
+    <li>BIT</li>
+    <li>TINYINT</li>
+    <li>BOOLEAN</li>
+    <li>INTEGER</li>
+    <li>FLOAT</li>
+    <li>DOUBLE</li>
+    <li>DECIMAL</li>
+    <li>DATE</li>
+    <li>DATETIME</li>
+  </ul>
+
+</body>
 </html>
